@@ -13,7 +13,7 @@ public class KataFizzBuzz {
 		String resp = "";
 		if(num%3 == 0 && num%5 == 0){
 			resp = "FizzBuzz";
-		}else if(num%3 == 0){
+		}else if(num%3 == 0 || (num+"").contains("3")){
 			resp = "Fizz";
 		}else if(num%5 == 0){
 			resp = "Buzz";

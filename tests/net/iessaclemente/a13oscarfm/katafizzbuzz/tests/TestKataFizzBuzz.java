@@ -46,4 +46,13 @@ public class TestKataFizzBuzz {
 		String result = kfb.multiplos(15);
 		assertEquals("FizzBuzz", result);
 	}
+	
+	/**
+	 * This test checks if given number contains 3
+	 */
+	@Test
+	public void testContieneTres(){
+		String result = kfb.multiplos(13);
+		assertEquals("Fizz", result);
+	}
 }
