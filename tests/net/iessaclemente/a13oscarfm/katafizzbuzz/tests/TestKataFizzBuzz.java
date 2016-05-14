@@ -46,13 +46,4 @@ public class TestKataFizzBuzz {
 		String result = kfb.multiplos(15);
 		assertEquals("FizzBuzz", result);
 	}
-
-	/**
-	 * This test checks if given number contains 5
-	 */
-	public void testContieneCinco(){
-		String result = kfb.multiplos(52);
-		assertEquals("Buzz", result);
-	}
-
 }
