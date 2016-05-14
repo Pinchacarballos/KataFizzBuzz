@@ -18,14 +18,20 @@ public class TestKataFizzBuzz {
 	
 	@Test
 	public void testMultiplposTres() {
-		String result = kfb.multiplosTres(9);
+		String result = kfb.multiplos(9);
 		assertEquals("Fizz", result);
 	}
 	
 	@Test
 	public void testMultiplposCinco() {
-		String result = kfb.multiplosCinco(25);
+		String result = kfb.multiplos(25);
 		assertEquals("Buzz", result);
+	}
+	
+	@Test
+	public void testMultiplosAmbos(){
+		String result = kfb.multiplos(15);
+		assertEquals("FizzBuzz", result);
 	}
 
 }

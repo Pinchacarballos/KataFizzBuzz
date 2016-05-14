@@ -2,18 +2,16 @@ package net.iessanclemente.a13oscarfm.katafizzbuzz;
 
 public class KataFizzBuzz {
 	
-	public String multiplosTres(int num){
+	public String multiplos(int num){
 		String resp = "";
-		if(num%3 == 0){
+		if(num%3 == 0 && num%5 == 0){
+			resp = "FizzBuzz";
+		}else if(num%3 == 0){
 			resp = "Fizz";
-		}
-		return resp;
-	}
-	
-	public String multiplosCinco(int num){
-		String resp = "";
-		if(num%5 == 0){
+		}else if(num%5 == 0){
 			resp = "Buzz";
+		}else{
+			resp = num+"";
 		}
 		return resp;
 	}
