@@ -15,7 +15,7 @@ public class KataFizzBuzz {
 			resp = "FizzBuzz";
 		}else if(num%3 == 0 || (num+"").contains("3")){
 			resp = "Fizz";
-		}else if(num%5 == 0){
+		}else if(num%5 == 0 || (num+"").contains("5")){
 			resp = "Buzz";
 		}else{
 			resp = num+"";
