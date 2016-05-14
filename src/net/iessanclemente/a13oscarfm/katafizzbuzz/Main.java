@@ -5,6 +5,7 @@ public class Main {
 		KataFizzBuzz kfb = new KataFizzBuzz();
 		for(int i = 1; i <= 100; i++){
 			System.out.println(kfb.multiplos(i));
+			//System.out.println(kfb.contieneTres(i+""));
 		}
 	}
 }

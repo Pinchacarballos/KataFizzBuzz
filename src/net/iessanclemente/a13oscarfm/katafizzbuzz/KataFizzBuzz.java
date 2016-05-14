@@ -3,8 +3,8 @@ package net.iessanclemente.a13oscarfm.katafizzbuzz;
 public class KataFizzBuzz {
 	
 	/**
-	 * This method check if the given number is multiple of 3, 5 or both
-	 * and returns 'Fizz', 'Buzz' or 'FizzBuzz' respectively.
+	 * This method checks if given number is multiple of 3, 5 or both
+	 * and returns 'Fizz', 'Buzz' or 'FizzBuzz', respectively.
 	 * 
 	 * @param num: The given number
 	 * @return 'Fizz'|'Buzz'|'FizzBuzz'
@@ -15,7 +15,7 @@ public class KataFizzBuzz {
 			resp = "FizzBuzz";
 		}else if(num%3 == 0){
 			resp = "Fizz";
-		}else if(num%5 == 0){
+		}else if(num%5 == 0 || (num+"").contains("5")){
 			resp = "Buzz";
 		}else{
 			resp = num+"";

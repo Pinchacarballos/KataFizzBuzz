@@ -13,17 +13,17 @@ public class TestKataFizzBuzz {
 	 * A global variable for all tests
 	 */
 	private KataFizzBuzz kfb;
-	
+
 	/**
-	 * Initialise kfb before start tests
+	 * Initialise kfb before starts tests
 	 */
 	@Before
 	public void setUp(){
 		kfb = new KataFizzBuzz();
 	}
-	
+
 	/**
-	 * This test check if the given number is multiple of 3
+	 * This test checks if given number is multiple of 3
 	 */
 	@Test
 	public void testMultiplposTres() {
@@ -31,7 +31,7 @@ public class TestKataFizzBuzz {
 		assertEquals("Fizz", result);
 	}
 	/**
-	 * This test check if the given number is multiple of 5
+	 * This test checks if given number is multiple of 5
 	 */
 	@Test
 	public void testMultiplposCinco() {
@@ -39,11 +39,20 @@ public class TestKataFizzBuzz {
 		assertEquals("Buzz", result);
 	}
 	/**
-	 * This test check if the given number is multiple of 3 and 5
+	 * This test checks if given number is multiple of 3 and 5
 	 */
 	@Test
 	public void testMultiplosAmbos(){
 		String result = kfb.multiplos(15);
 		assertEquals("FizzBuzz", result);
 	}
+
+	/**
+	 * This test checks if given number contains 5
+	 */
+	public void testContieneCinco(){
+		String result = kfb.multiplos(52);
+		assertEquals("Buzz", result);
+	}
+
 }
