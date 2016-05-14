@@ -21,5 +21,11 @@ public class TestKataFizzBuzz {
 		String result = kfb.multiplosTres(9);
 		assertEquals("Fizz", result);
 	}
+	
+	@Test
+	public void testMultiplposCinco() {
+		String result = kfb.multiplosCinco(25);
+		assertEquals("Buzz", result);
+	}
 
 }
